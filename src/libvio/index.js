@@ -124,12 +124,42 @@ async function startDownloadWithNum(num=1){
     }
 }
 
+async function startDownloadWithVideoNames(videoNames){
+    const videoList = await parseVideoListInfo(false);
+    const desVideoList = videoNames.map(name => videoList.find(video => video.title === name)).filter(Boolean);
+
+    for(let i=0;i<desVideoList.length;i++){
+        try{
+            const videoCurrent = desVideoList[i];
+            const { title, link, hasDownload } = videoCurrent;
+            if(hasDownload){
+                continue
+            }
+            const videoDetailInfo = await parseVideoDetailInfo(title, link);
+            console.log(videoDetailInfo);
+            // 等待下载完毕
+            try{
+                await downloadVideo(videoDetailInfo);
+                videoCurrent.hasDownload = true;
+                saveVideoListData(videoList);
+            }catch(e){
+                console.error(e);
+            }
+        }catch(e){
+            console.error(e);
+        }
+        
+    }
+    console.log('所有影片已经下载完毕');
+}
+
 export default {
     async startSpider(cfg){
         config = cfg
         console.log('任务开始')
         console.log(`最终视频保存在此目录：${cfg.filePath}`)
-        startDownloadWithNum();
+        // startDownloadWithNum();
+        startDownloadWithVideoNames(['寄生','四爷，你家娇妻马甲又掉了'])
     }
 }
 

@@ -18,6 +18,7 @@ async function parseVideoListInfo(force = false){
     let videoList = getVideoListData();
 
     if(!videoList || force){
+        videoList = [];
         let currentLink = rootUrl;
         for(let i=0; i<500; i++){ //防止死循环 最高500
             console.log(`搜索第${i+1}页内容，link: ${currentLink}`)

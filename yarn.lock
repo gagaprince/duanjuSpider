@@ -110,9 +110,9 @@ downloader-m3u8@^1.0.9:
     md5 "^2.3.0"
 
 downloader-util@^1.0.10:
-  version "1.0.12"
-  resolved "https://r.cnpmjs.org/downloader-util/-/downloader-util-1.0.12.tgz#9d0a9273d9ed84debfafe3e055caef8a73fd6af7"
-  integrity sha512-9roxvLcK6OzgB2iVUUJuierGf+xWpqva/17skPrS8BUqZa6EIABgT1QkcPcCIlS9SEOlNhloQk+wrT62Xu7OWQ==
+  version "1.0.13"
+  resolved "https://r.cnpmjs.org/downloader-util/-/downloader-util-1.0.13.tgz#3794664c6f89f4707aac86cb38bc921d1861a787"
+  integrity sha512-8tg6YjA343MKnakv9qiL4S4+C0UURyjOz9+yOeb6fGWv4Vj1h2AVmld70lTQZwjSDIh02BUd0C7vYKYdWsqLNg==
   dependencies:
     axios "^0.20.0"
     fs-extra "^9.0.1"

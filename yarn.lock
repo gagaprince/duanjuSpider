@@ -100,10 +100,10 @@ domutils@^3.0.1:
     domelementtype "^2.3.0"
     domhandler "^5.0.3"
 
-downloader-m3u8@^1.0.9:
-  version "1.0.9"
-  resolved "https://r.cnpmjs.org/downloader-m3u8/-/downloader-m3u8-1.0.9.tgz#58438aa62b4d72f3a964ad6b8856a782b9427978"
-  integrity sha512-DVkWc9oWJxDlp5NNnm2qt5Kk0rgNvAk2eXAusW0QP80F1QizvPLNkjG806roH7isQH93HJnaE49ByZGcRnyMhg==
+downloader-m3u8@^1.0.10:
+  version "1.0.10"
+  resolved "https://r.cnpmjs.org/downloader-m3u8/-/downloader-m3u8-1.0.10.tgz#57488df299d696e4b6d49cf57cddd08b6ac1de17"
+  integrity sha512-Lw0dYoxfJahyKlGIsR+uq3bHPmIdlygXx3LJ7Aw7Kkax2CH0JRDgL45A3X698GMkz5nxU4WrOuy8b9eWfjGf/g==
   dependencies:
     downloader-util "^1.0.10"
     fs-extra "^9.0.1"

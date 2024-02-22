@@ -19,6 +19,6 @@
   "homepage": "https://github.com/gagaprince/duanjuSpider#readme",
   "dependencies": {
     "cheerio": "^1.0.0-rc.12",
-    "downloader-m3u8": "^1.0.9"
+    "downloader-m3u8": "^1.0.10"
   }
 }

@@ -158,8 +158,8 @@ export default {
         config = cfg
         console.log('任务开始')
         console.log(`最终视频保存在此目录：${cfg.filePath}`)
-        // startDownloadWithNum();
-        startDownloadWithVideoNames(['寄生','四爷，你家娇妻马甲又掉了'])
+        startDownloadWithNum();
+        // startDownloadWithVideoNames(['甜心萌探'])
     }
 }
 

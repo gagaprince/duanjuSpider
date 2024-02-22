@@ -27,7 +27,7 @@ export const getVideoListData = ()=>{
         let data = fs.readFileSync(videoListPath, 'utf8');
         return JSON.parse(data);
     } catch (err) {
-        console.error(e);
+        console.error(err);
         if (err.code === 'ENOENT') {
             return null;  // 如果文件不存在，返回 null
         } else {
